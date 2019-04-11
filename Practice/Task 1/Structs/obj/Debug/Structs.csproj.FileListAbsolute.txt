@@ -1,0 +1,7 @@
+C:\Users\Professional\source\repos\Practice\Task 1\Structs\bin\Debug\Structs.exe.config
+C:\Users\Professional\source\repos\Practice\Task 1\Structs\bin\Debug\Structs.exe
+C:\Users\Professional\source\repos\Practice\Task 1\Structs\bin\Debug\Structs.pdb
+C:\Users\Professional\source\repos\Practice\Task 1\Structs\obj\Debug\Structs.csprojAssemblyReference.cache
+C:\Users\Professional\source\repos\Practice\Task 1\Structs\obj\Debug\Structs.csproj.CoreCompileInputs.cache
+C:\Users\Professional\source\repos\Practice\Task 1\Structs\obj\Debug\Structs.exe
+C:\Users\Professional\source\repos\Practice\Task 1\Structs\obj\Debug\Structs.pdb

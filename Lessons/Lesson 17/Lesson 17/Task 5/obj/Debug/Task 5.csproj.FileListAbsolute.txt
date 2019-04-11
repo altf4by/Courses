@@ -1,0 +1,7 @@
+C:\Users\Professional\source\repos\Lessons\Lesson 17\Lesson 17\Task 5\bin\Debug\Task 5.exe.config
+C:\Users\Professional\source\repos\Lessons\Lesson 17\Lesson 17\Task 5\bin\Debug\Task 5.exe
+C:\Users\Professional\source\repos\Lessons\Lesson 17\Lesson 17\Task 5\bin\Debug\Task 5.pdb
+C:\Users\Professional\source\repos\Lessons\Lesson 17\Lesson 17\Task 5\obj\Debug\Task 5.csprojAssemblyReference.cache
+C:\Users\Professional\source\repos\Lessons\Lesson 17\Lesson 17\Task 5\obj\Debug\Task 5.csproj.CoreCompileInputs.cache
+C:\Users\Professional\source\repos\Lessons\Lesson 17\Lesson 17\Task 5\obj\Debug\Task 5.exe
+C:\Users\Professional\source\repos\Lessons\Lesson 17\Lesson 17\Task 5\obj\Debug\Task 5.pdb

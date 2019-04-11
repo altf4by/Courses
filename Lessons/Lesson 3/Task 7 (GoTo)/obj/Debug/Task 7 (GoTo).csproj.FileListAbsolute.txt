@@ -1,0 +1,6 @@
+C:\Users\User\source\repos\Lesson3\Lesson 3\Task 7 (GoTo)\bin\Debug\Task 7 (GoTo).exe.config
+C:\Users\User\source\repos\Lesson3\Lesson 3\Task 7 (GoTo)\bin\Debug\Task 7 (GoTo).exe
+C:\Users\User\source\repos\Lesson3\Lesson 3\Task 7 (GoTo)\bin\Debug\Task 7 (GoTo).pdb
+C:\Users\User\source\repos\Lesson3\Lesson 3\Task 7 (GoTo)\obj\Debug\Task 7 (GoTo).csproj.CoreCompileInputs.cache
+C:\Users\User\source\repos\Lesson3\Lesson 3\Task 7 (GoTo)\obj\Debug\Task 7 (GoTo).exe
+C:\Users\User\source\repos\Lesson3\Lesson 3\Task 7 (GoTo)\obj\Debug\Task 7 (GoTo).pdb

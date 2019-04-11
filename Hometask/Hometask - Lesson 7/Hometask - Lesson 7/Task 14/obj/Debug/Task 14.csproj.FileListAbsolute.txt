@@ -1,0 +1,6 @@
+C:\Users\User\source\repos\Hometask\Hometask - Lesson 7\Hometask - Lesson 7\Task 14\bin\Debug\Task 14.exe.config
+C:\Users\User\source\repos\Hometask\Hometask - Lesson 7\Hometask - Lesson 7\Task 14\bin\Debug\Task 14.exe
+C:\Users\User\source\repos\Hometask\Hometask - Lesson 7\Hometask - Lesson 7\Task 14\bin\Debug\Task 14.pdb
+C:\Users\User\source\repos\Hometask\Hometask - Lesson 7\Hometask - Lesson 7\Task 14\obj\Debug\Task 14.csproj.CoreCompileInputs.cache
+C:\Users\User\source\repos\Hometask\Hometask - Lesson 7\Hometask - Lesson 7\Task 14\obj\Debug\Task 14.exe
+C:\Users\User\source\repos\Hometask\Hometask - Lesson 7\Hometask - Lesson 7\Task 14\obj\Debug\Task 14.pdb

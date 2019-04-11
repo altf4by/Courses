@@ -1,0 +1,7 @@
+C:\Users\Professional\source\repos\Hometask\HomeTask - Lesson 17\HomeTask - Lesson 17\Task 2\bin\Debug\Task 2.exe.config
+C:\Users\Professional\source\repos\Hometask\HomeTask - Lesson 17\HomeTask - Lesson 17\Task 2\bin\Debug\Task 2.exe
+C:\Users\Professional\source\repos\Hometask\HomeTask - Lesson 17\HomeTask - Lesson 17\Task 2\bin\Debug\Task 2.pdb
+C:\Users\Professional\source\repos\Hometask\HomeTask - Lesson 17\HomeTask - Lesson 17\Task 2\obj\Debug\Task 2.csprojAssemblyReference.cache
+C:\Users\Professional\source\repos\Hometask\HomeTask - Lesson 17\HomeTask - Lesson 17\Task 2\obj\Debug\Task 2.csproj.CoreCompileInputs.cache
+C:\Users\Professional\source\repos\Hometask\HomeTask - Lesson 17\HomeTask - Lesson 17\Task 2\obj\Debug\Task 2.exe
+C:\Users\Professional\source\repos\Hometask\HomeTask - Lesson 17\HomeTask - Lesson 17\Task 2\obj\Debug\Task 2.pdb

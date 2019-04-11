@@ -1,0 +1,7 @@
+C:\Users\Professional\source\repos\Lessons\Lesson 20\Lesson 20\Task 6 (Exeptions)\bin\Debug\Task 6 (Exeptions).exe.config
+C:\Users\Professional\source\repos\Lessons\Lesson 20\Lesson 20\Task 6 (Exeptions)\bin\Debug\Task 6 (Exeptions).exe
+C:\Users\Professional\source\repos\Lessons\Lesson 20\Lesson 20\Task 6 (Exeptions)\bin\Debug\Task 6 (Exeptions).pdb
+C:\Users\Professional\source\repos\Lessons\Lesson 20\Lesson 20\Task 6 (Exeptions)\obj\Debug\Task 6 (Exeptions).csprojAssemblyReference.cache
+C:\Users\Professional\source\repos\Lessons\Lesson 20\Lesson 20\Task 6 (Exeptions)\obj\Debug\Task 6 (Exeptions).csproj.CoreCompileInputs.cache
+C:\Users\Professional\source\repos\Lessons\Lesson 20\Lesson 20\Task 6 (Exeptions)\obj\Debug\Task 6 (Exeptions).exe
+C:\Users\Professional\source\repos\Lessons\Lesson 20\Lesson 20\Task 6 (Exeptions)\obj\Debug\Task 6 (Exeptions).pdb

@@ -1,0 +1,7 @@
+C:\Users\Professional\source\repos\Practice\Task 1\CustomInterface\bin\Debug\CustomInterface.exe.config
+C:\Users\Professional\source\repos\Practice\Task 1\CustomInterface\bin\Debug\CustomInterface.exe
+C:\Users\Professional\source\repos\Practice\Task 1\CustomInterface\bin\Debug\CustomInterface.pdb
+C:\Users\Professional\source\repos\Practice\Task 1\CustomInterface\obj\Debug\CustomInterface.csprojAssemblyReference.cache
+C:\Users\Professional\source\repos\Practice\Task 1\CustomInterface\obj\Debug\CustomInterface.csproj.CoreCompileInputs.cache
+C:\Users\Professional\source\repos\Practice\Task 1\CustomInterface\obj\Debug\CustomInterface.exe
+C:\Users\Professional\source\repos\Practice\Task 1\CustomInterface\obj\Debug\CustomInterface.pdb

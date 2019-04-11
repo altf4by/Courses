@@ -1,0 +1,7 @@
+C:\Users\Professional\source\repos\Practice\Task 1\Exceptions\bin\Debug\Exceptions.exe.config
+C:\Users\Professional\source\repos\Practice\Task 1\Exceptions\bin\Debug\Exceptions.exe
+C:\Users\Professional\source\repos\Practice\Task 1\Exceptions\bin\Debug\Exceptions.pdb
+C:\Users\Professional\source\repos\Practice\Task 1\Exceptions\obj\Debug\Exceptions.csprojAssemblyReference.cache
+C:\Users\Professional\source\repos\Practice\Task 1\Exceptions\obj\Debug\Exceptions.csproj.CoreCompileInputs.cache
+C:\Users\Professional\source\repos\Practice\Task 1\Exceptions\obj\Debug\Exceptions.exe
+C:\Users\Professional\source\repos\Practice\Task 1\Exceptions\obj\Debug\Exceptions.pdb

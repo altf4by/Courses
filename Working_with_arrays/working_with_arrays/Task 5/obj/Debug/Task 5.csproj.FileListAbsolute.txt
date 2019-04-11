@@ -1,0 +1,6 @@
+c:\Users\User\source\repos\Working_with_arrays\working_with_arrays\Task 5\bin\Debug\Task 5.exe.config
+c:\Users\User\source\repos\Working_with_arrays\working_with_arrays\Task 5\bin\Debug\Task 5.exe
+c:\Users\User\source\repos\Working_with_arrays\working_with_arrays\Task 5\bin\Debug\Task 5.pdb
+c:\Users\User\source\repos\Working_with_arrays\working_with_arrays\Task 5\obj\Debug\Task 5.csproj.CoreCompileInputs.cache
+c:\Users\User\source\repos\Working_with_arrays\working_with_arrays\Task 5\obj\Debug\Task 5.exe
+c:\Users\User\source\repos\Working_with_arrays\working_with_arrays\Task 5\obj\Debug\Task 5.pdb

@@ -1,0 +1,7 @@
+C:\Users\Professional\source\repos\Practice\Task 1\Incapsulation\bin\Debug\Incapsulation.exe.config
+C:\Users\Professional\source\repos\Practice\Task 1\Incapsulation\bin\Debug\Incapsulation.exe
+C:\Users\Professional\source\repos\Practice\Task 1\Incapsulation\bin\Debug\Incapsulation.pdb
+C:\Users\Professional\source\repos\Practice\Task 1\Incapsulation\obj\Debug\Incapsulation.csprojAssemblyReference.cache
+C:\Users\Professional\source\repos\Practice\Task 1\Incapsulation\obj\Debug\Incapsulation.csproj.CoreCompileInputs.cache
+C:\Users\Professional\source\repos\Practice\Task 1\Incapsulation\obj\Debug\Incapsulation.exe
+C:\Users\Professional\source\repos\Practice\Task 1\Incapsulation\obj\Debug\Incapsulation.pdb

@@ -1,0 +1,7 @@
+C:\Users\Professional\source\repos\Lessons\Lesson 19\Lesson 19\Task 6\bin\Debug\Task 6.exe.config
+C:\Users\Professional\source\repos\Lessons\Lesson 19\Lesson 19\Task 6\bin\Debug\Task 6.exe
+C:\Users\Professional\source\repos\Lessons\Lesson 19\Lesson 19\Task 6\bin\Debug\Task 6.pdb
+C:\Users\Professional\source\repos\Lessons\Lesson 19\Lesson 19\Task 6\obj\Debug\Task 6.csprojAssemblyReference.cache
+C:\Users\Professional\source\repos\Lessons\Lesson 19\Lesson 19\Task 6\obj\Debug\Task 6.csproj.CoreCompileInputs.cache
+C:\Users\Professional\source\repos\Lessons\Lesson 19\Lesson 19\Task 6\obj\Debug\Task 6.exe
+C:\Users\Professional\source\repos\Lessons\Lesson 19\Lesson 19\Task 6\obj\Debug\Task 6.pdb

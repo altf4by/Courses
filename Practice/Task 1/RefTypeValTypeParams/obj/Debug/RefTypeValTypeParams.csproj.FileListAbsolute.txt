@@ -1,0 +1,7 @@
+C:\Users\Professional\source\repos\Practice\Task 1\RefTypeValTypeParams\bin\Debug\RefTypeValTypeParams.exe.config
+C:\Users\Professional\source\repos\Practice\Task 1\RefTypeValTypeParams\bin\Debug\RefTypeValTypeParams.exe
+C:\Users\Professional\source\repos\Practice\Task 1\RefTypeValTypeParams\bin\Debug\RefTypeValTypeParams.pdb
+C:\Users\Professional\source\repos\Practice\Task 1\RefTypeValTypeParams\obj\Debug\RefTypeValTypeParams.csprojAssemblyReference.cache
+C:\Users\Professional\source\repos\Practice\Task 1\RefTypeValTypeParams\obj\Debug\RefTypeValTypeParams.csproj.CoreCompileInputs.cache
+C:\Users\Professional\source\repos\Practice\Task 1\RefTypeValTypeParams\obj\Debug\RefTypeValTypeParams.exe
+C:\Users\Professional\source\repos\Practice\Task 1\RefTypeValTypeParams\obj\Debug\RefTypeValTypeParams.pdb

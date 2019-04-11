@@ -1,0 +1,6 @@
+C:\Users\Professional\source\repos\Hometask\HomeTask - Lesson 15\HomeTask - Lesson 15\Task 3\bin\Debug\Task 3.exe.config
+C:\Users\Professional\source\repos\Hometask\HomeTask - Lesson 15\HomeTask - Lesson 15\Task 3\bin\Debug\Task 3.exe
+C:\Users\Professional\source\repos\Hometask\HomeTask - Lesson 15\HomeTask - Lesson 15\Task 3\bin\Debug\Task 3.pdb
+C:\Users\Professional\source\repos\Hometask\HomeTask - Lesson 15\HomeTask - Lesson 15\Task 3\obj\Debug\Task 3.csproj.CoreCompileInputs.cache
+C:\Users\Professional\source\repos\Hometask\HomeTask - Lesson 15\HomeTask - Lesson 15\Task 3\obj\Debug\Task 3.exe
+C:\Users\Professional\source\repos\Hometask\HomeTask - Lesson 15\HomeTask - Lesson 15\Task 3\obj\Debug\Task 3.pdb

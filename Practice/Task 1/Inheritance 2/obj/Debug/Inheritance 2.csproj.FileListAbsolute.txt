@@ -1,0 +1,7 @@
+C:\Users\Professional\source\repos\Practice\Task 1\Inheritance 2\bin\Debug\Inheritance 2.exe.config
+C:\Users\Professional\source\repos\Practice\Task 1\Inheritance 2\bin\Debug\Inheritance 2.exe
+C:\Users\Professional\source\repos\Practice\Task 1\Inheritance 2\bin\Debug\Inheritance 2.pdb
+C:\Users\Professional\source\repos\Practice\Task 1\Inheritance 2\obj\Debug\Inheritance 2.csprojAssemblyReference.cache
+C:\Users\Professional\source\repos\Practice\Task 1\Inheritance 2\obj\Debug\Inheritance 2.csproj.CoreCompileInputs.cache
+C:\Users\Professional\source\repos\Practice\Task 1\Inheritance 2\obj\Debug\Inheritance 2.exe
+C:\Users\Professional\source\repos\Practice\Task 1\Inheritance 2\obj\Debug\Inheritance 2.pdb
