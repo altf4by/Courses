@@ -10,6 +10,10 @@ namespace Task_1
     {
         static void Main(string[] args)
         {
+            Information workInformation = new Information(565);
+
+            Console.WriteLine("Скорость чтения и записи вносить в Кбайт/с");
+
         }
     }
 }
