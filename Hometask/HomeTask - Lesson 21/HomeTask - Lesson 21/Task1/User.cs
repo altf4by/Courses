@@ -3,6 +3,7 @@ using Task1.Storages;
 using Task1.USBIntefaces;
 using Task1.DVDInterfaces;
 using Task1.Enums;
+using System;
 
 
 namespace Task1
@@ -11,7 +12,7 @@ namespace Task1
     {
         public Storage[] storages;
 
-        public int TimeSpent { get; set; }
+        public int[] TimeSpent { get; set; }
         public int QuantityOfDeviceUse { get; set; }
 
         public Information infoOnPC { get; set; }
@@ -29,6 +30,7 @@ namespace Task1
             storages[3] = new ExternalHDD("Western Digital WDBUZG 5000ABK", 3, new USB_2_0());
 
             infoOnPC = new Information(565);
+            TimeSpent = new int[4];
         }
 
 
@@ -42,33 +44,41 @@ namespace Task1
         public Storage GetStorageByType(StorageType storageType)
         {
             foreach (Storage storage in storages)
-            {
                 if (storageType == storage.StorageType)
                     return storage;
-            }                
+                
             return new Flash();
         }
 
         public void CopyToDevice(Storage storage)
         {
-            storage.CopyDataToDevice(this);
+            TimeSpent[0] = storage.CopyDataToDevice(this);
         }
 
-        public void CopyFromDevice()
+        public void CopyFromDevice(Storage storage)
         {
+            double copiedSize = 0;
 
+            do
+            {
+                copiedSize += storage.filesOnDevice[storage.filesOnDevice.Length - 1].Size;
+                storage.EmptyCapacity += storage.filesOnDevice[storage.filesOnDevice.Length-1].Size;
+
+                Array.Resize(ref storage.filesOnDevice, storage.filesOnDevice.Length - 1);
+            } while (storage.filesOnDevice.Length>1);
+            //TimeSpent[0]+= (int)(copiedSize / );
         }
 
         public int StartCopy(Storage storage)
         {
-            TimeSpent = 0;
+            TimeSpent[0] = 0;
             do
             {
                 CopyToDevice(storage);
-                CopyFromDevice();
+                CopyFromDevice(storage);
             } while (FileNumberToCopy != infoOnPC.TotalFilesQuantity);
 
-            return TimeSpent;
+            return TimeSpent[0];
         }
 
 

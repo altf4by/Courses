@@ -1,5 +1,6 @@
 ﻿using Task1.Enums;
 using Task1.USBIntefaces;
+using System;
 
 namespace Task1.Storages
 {
@@ -23,7 +24,7 @@ namespace Task1.Storages
         }
 
 
-        public override void CopyDataToDevice(User user)
+        public override int CopyDataToDevice(User user)
         {
             for (int i = 0; i < partitions.Length; i++)
             {
@@ -34,9 +35,13 @@ namespace Task1.Storages
                 {
                     partitions[i].EmptyCapacity -= user.infoOnPC[user.FileNumberToCopy++].Size;
                     copiedSize += user.infoOnPC[user.FileNumberToCopy].Size;
-                    user.TimeSpent += (int)(copiedSize / usbType.WriteSpeed);
+                    user.TimeSpent[0] += (int)(copiedSize / usbType.WriteSpeed);
+                    Array.Resize(ref filesOnDevice, filesOnDevice.Length + 1);
+                    filesOnDevice[filesOnDevice.Length - 1] = user.infoOnPC[user.FileNumberToCopy];
                 }
             }
+            return user.TimeSpent[0];
+
         }
 
         public override double GetCapacity()

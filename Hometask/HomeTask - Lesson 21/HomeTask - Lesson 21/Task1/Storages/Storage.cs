@@ -1,4 +1,5 @@
 ﻿using Task1.Enums;
+using Task1.Data;
 
 namespace Task1.Storages
 {
@@ -8,17 +9,19 @@ namespace Task1.Storages
         public StorageType StorageType { get; set; }
         public double EmptyCapacity { get; set; }
 
+        public File[] filesOnDevice;
 
         public Storage(string model, StorageType type)
         {
             Model = model;
             StorageType = type;
+            filesOnDevice = new File[0];
         }
 
 
         public abstract double GetCapacity();
 
-        public abstract void CopyDataToDevice(User user);
+        public abstract int CopyDataToDevice(User user);
 
         public abstract double GetEmptyCapacity();
 

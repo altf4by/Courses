@@ -1,13 +1,14 @@
 ﻿using Task1.Enums;
 using Task1.Data;
 using Task1.USBIntefaces;
+using System;
 
 namespace Task1.Storages
 {
     class Flash : Storage
     {
         public double Capacity { get; set; }
-        protected IUSB_Interface usbType;
+        public IUSB_Interface usbType;
 
         public Flash() : this("NO NAME", 4, new USB_3_0()) { }
 
@@ -22,7 +23,7 @@ namespace Task1.Storages
 
 
 
-        public override void CopyDataToDevice(User user)
+        public override int CopyDataToDevice(User user)
         {
             double copiedSize = 0;
             
@@ -30,8 +31,10 @@ namespace Task1.Storages
             {
                 EmptyCapacity -= user.infoOnPC[user.FileNumberToCopy++].Size;
                 copiedSize += user.infoOnPC[user.FileNumberToCopy].Size;
+                Array.Resize(ref filesOnDevice, filesOnDevice.Length + 1);
+                filesOnDevice[filesOnDevice.Length - 1] = user.infoOnPC[user.FileNumberToCopy];
             }
-            user.TimeSpent += (int)(copiedSize / usbType.WriteSpeed);
+            return user.TimeSpent[0] += (int)(copiedSize / usbType.WriteSpeed);
         }
 
         public void CopyFileToDevice(File file)
@@ -42,6 +45,8 @@ namespace Task1.Storages
             {
                 EmptyCapacity -= file.Size;
                 copiedSize += file.Size;
+                Array.Resize(ref filesOnDevice, filesOnDevice.Length + 1);
+                filesOnDevice[filesOnDevice.Length - 1] = file;
             }
         }
 

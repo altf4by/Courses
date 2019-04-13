@@ -12,7 +12,7 @@
             this.size = size * 1024;
             double tempFileSize = new File().Size;
 
-            //Здеся я проверяю количество файлов (с учетом того, что последний файл может быть не стандартного размера)
+            //Здесь я проверяю количество файлов (с учетом того, что последний файл может быть не стандартного размера)
             if (this.size > ((int)(this.size / tempFileSize)) * tempFileSize)
                 TotalFilesQuantity = (int)(this.size / tempFileSize) + 1;
             else TotalFilesQuantity = (int)(this.size / tempFileSize);

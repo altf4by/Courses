@@ -43,8 +43,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Files\Information.cs" />
-    <Compile Include="Files\File.cs" />
+    <Compile Include="Data\Information.cs" />
+    <Compile Include="Data\File.cs" />
     <Compile Include="DVDInterfaces\DVDSide.cs" />
     <Compile Include="DVDInterfaces\IDVD_Interface.cs" />
     <Compile Include="DVDInterfaces\OneSideDVD.cs" />

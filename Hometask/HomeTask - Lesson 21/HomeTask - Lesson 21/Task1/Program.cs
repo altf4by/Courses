@@ -32,9 +32,7 @@ namespace Task1
 
             User user = new User();
             Console.WriteLine("Было затрачено секунд на копирование информации:");
-            Console.WriteLine(user.StartCopy(user.GetStorageByType(StorageType.DVD)));
-            user.StartCopy(user.GetStorageByType(StorageType.DVD));
-
+            Console.WriteLine(user.StartCopy(user.GetStorageByType(StorageType.Flash)));
 
             Console.ReadKey(true);
         }

@@ -1,5 +1,6 @@
 ﻿using Task1.DVDInterfaces;
 using Task1.Enums;
+using System;
 
 namespace Task1.Storages
 {
@@ -27,7 +28,7 @@ namespace Task1.Storages
         }
 
 
-        public override void CopyDataToDevice(User user)
+        public override int CopyDataToDevice(User user)
         {
             for (int i = 0; i < dvdType.SidesQuantity - 1; i++)
             {
@@ -38,9 +39,12 @@ namespace Task1.Storages
                 {
                     sides[i].EmptyCapacity -= user.infoOnPC[user.FileNumberToCopy++].Size;
                     copiedSize += user.infoOnPC[user.FileNumberToCopy].Size;
-                    user.TimeSpent += (int)(copiedSize / WriteSpeed);
+                    user.TimeSpent[0] += (int)(copiedSize / WriteSpeed);
+                    Array.Resize(ref filesOnDevice, filesOnDevice.Length + 1);
+                    filesOnDevice[filesOnDevice.Length - 1] = user.infoOnPC[user.FileNumberToCopy];
                 }
-            }  
+            }
+            return user.TimeSpent[0];
         }
 
         public override double GetCapacity()
