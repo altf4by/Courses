@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Task1.USBIntefaces
+﻿namespace Task1.USBIntefaces
 {
     class USB_3_0:IUSB_Interface
     {
