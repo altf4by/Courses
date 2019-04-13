@@ -1,5 +1,4 @@
-﻿
-namespace Task1.DVDInterfaces
+﻿namespace Task1.DVDInterfaces
 {
     class OneSideDVD : IDVD_Interface
     {

@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Task1.DVDInterfaces;
+﻿using Task1.DVDInterfaces;
 using Task1.Enums;
 
 namespace Task1.Storages
@@ -38,11 +33,11 @@ namespace Task1.Storages
             {
                 double copiedSize = 0;
 
-                while (sides[i].EmptyCapacity >= user.infoOnPC[user.NumberOfFileToCopy].Size 
-                    && user.NumberOfFileToCopy != user.infoOnPC.TotalFilesQuantity)
+                while (sides[i].EmptyCapacity >= user.infoOnPC[user.FileNumberToCopy].Size 
+                    && user.FileNumberToCopy != user.infoOnPC.TotalFilesQuantity)
                 {
-                    sides[i].EmptyCapacity -= user.infoOnPC[user.NumberOfFileToCopy++].Size;
-                    copiedSize += user.infoOnPC[user.NumberOfFileToCopy].Size;
+                    sides[i].EmptyCapacity -= user.infoOnPC[user.FileNumberToCopy++].Size;
+                    copiedSize += user.infoOnPC[user.FileNumberToCopy].Size;
                     user.TimeSpent += (int)(copiedSize / WriteSpeed);
                 }
             }  

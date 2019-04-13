@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Task1.Enums;
+﻿using Task1.Enums;
 using Task1.Data;
 using Task1.USBIntefaces;
 
@@ -20,7 +15,7 @@ namespace Task1.Storages
 
         public Flash(string model, double capacity, IUSB_Interface usbType) : base(model, StorageType.Flash)
         {            
-            Capacity = capacity;
+            Capacity = capacity*1024;
             this.usbType = usbType;
             EmptyCapacity = Capacity;
         }
@@ -31,10 +26,10 @@ namespace Task1.Storages
         {
             double copiedSize = 0;
             
-            while (EmptyCapacity >= user.infoOnPC[user.NumberOfFileToCopy].Size && user.NumberOfFileToCopy != user.infoOnPC.TotalFilesQuantity)
+            while (EmptyCapacity >= user.infoOnPC[user.FileNumberToCopy].Size && user.FileNumberToCopy != user.infoOnPC.TotalFilesQuantity)
             {
-                EmptyCapacity -= user.infoOnPC[user.NumberOfFileToCopy++].Size;
-                copiedSize += user.infoOnPC[user.NumberOfFileToCopy].Size;
+                EmptyCapacity -= user.infoOnPC[user.FileNumberToCopy++].Size;
+                copiedSize += user.infoOnPC[user.FileNumberToCopy].Size;
             }
             user.TimeSpent += (int)(copiedSize / usbType.WriteSpeed);
         }
@@ -64,7 +59,7 @@ namespace Task1.Storages
         {
             return string.Format("Тип носителя и модель: {0}-{1}\nОбъем носителя: {2} Gb" +
                                  "\nСвободный объем: {3} Gb\nСкорость (чтение/запись): {4} / {5} Kb/s",
-                StorageType, Model, Capacity, EmptyCapacity, usbType.ReadSpeed, usbType.WriteSpeed);
+                StorageType, Model, Capacity/1024, EmptyCapacity/1024, usbType.ReadSpeed, usbType.WriteSpeed);
         }
     }
 }

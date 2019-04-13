@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Task1.Enums;
+﻿using Task1.Enums;
 using Task1.USBIntefaces;
 
 namespace Task1.Storages
@@ -34,11 +29,11 @@ namespace Task1.Storages
             {
                 double copiedSize = 0;
 
-                while (partitions[i].EmptyCapacity >= user.infoOnPC[user.NumberOfFileToCopy].Size
-                    && user.NumberOfFileToCopy != user.infoOnPC.TotalFilesQuantity)
+                while (partitions[i].EmptyCapacity >= user.infoOnPC[user.FileNumberToCopy].Size
+                    && user.FileNumberToCopy != user.infoOnPC.TotalFilesQuantity)
                 {
-                    partitions[i].EmptyCapacity -= user.infoOnPC[user.NumberOfFileToCopy++].Size;
-                    copiedSize += user.infoOnPC[user.NumberOfFileToCopy].Size;
+                    partitions[i].EmptyCapacity -= user.infoOnPC[user.FileNumberToCopy++].Size;
+                    copiedSize += user.infoOnPC[user.FileNumberToCopy].Size;
                     user.TimeSpent += (int)(copiedSize / usbType.WriteSpeed);
                 }
             }
