@@ -13,25 +13,44 @@ namespace Task1.Storages
         public const double ReadSpeed = 10.56 * 1024;
         public const double WriteSpeed = 10.56 * 1024;
 
+        public DVDSide[] sides; 
+
         protected IDVD_Interface dvdType;
 
-
-        public DVD() : this("No Name", new OneSideDVD()) { }
+        public DVD() : this("ACME 003237", new OneSideDVD()) { }
 
         public DVD(string model, IDVD_Interface dvdType) : base(model, StorageType.DVD)
         {
             this.dvdType = dvdType;
-            EmptyCapacity = dvdType.SidesQuantity == 1 ? 4.7 : 9.4;
+
+            sides = new DVDSide[dvdType.SidesQuantity];
+
+            for (int i = 0; i <= dvdType.SidesQuantity-1; i++)
+                sides[i] = new DVDSide();
+
+            EmptyCapacity = dvdType.SidesQuantity*sides[0].GetSideCapacity();
         }
+
 
         public override void CopyDataToDevice(User user)
         {
-            throw new NotImplementedException();
+            for (int i = 0; i < dvdType.SidesQuantity - 1; i++)
+            {
+                double copiedSize = 0;
+
+                while (sides[i].EmptyCapacity >= user.infoOnPC[user.NumberOfFileToCopy].Size 
+                    && user.NumberOfFileToCopy != user.infoOnPC.TotalFilesQuantity)
+                {
+                    sides[i].EmptyCapacity -= user.infoOnPC[user.NumberOfFileToCopy++].Size;
+                    copiedSize += user.infoOnPC[user.NumberOfFileToCopy].Size;
+                    user.TimeSpent += (int)(copiedSize / WriteSpeed);
+                }
+            }  
         }
 
         public override double GetCapacity()
         {
-            return dvdType.SidesQuantity == 1 ? 4.7 : 9.4;
+            return dvdType.SidesQuantity * sides[0].GetSideCapacity();
         }
 
         public override double GetEmptyCapacity()
@@ -43,7 +62,7 @@ namespace Task1.Storages
         {
             return string.Format("Тип носителя и модель: {0}-{1}\nОбъем носителя: {2} Gb" +
              "\nСвободный объем: {3} Gb\nКоличество сторон: {4}\nСкорость (чтение/запись): {5} / {6} Kb/s",
-                StorageType, Model, GetCapacity(), EmptyCapacity, dvdType.SidesQuantity, ReadSpeed, WriteSpeed);
+                StorageType, Model, this.GetCapacity(), EmptyCapacity, dvdType.SidesQuantity, ReadSpeed, WriteSpeed);
         }
     }
 }

@@ -10,7 +10,7 @@ namespace Task1.Storages
 {
     abstract class Storage
     {
-        public string Model { get; set; }
+        protected string Model { get; set; }
         public StorageType StorageType { get; set; }
         public double EmptyCapacity { get; set; }
 

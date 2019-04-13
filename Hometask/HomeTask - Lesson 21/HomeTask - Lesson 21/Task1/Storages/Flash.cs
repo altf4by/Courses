@@ -30,7 +30,7 @@ namespace Task1.Storages
         public override void CopyDataToDevice(User user)
         {
             double copiedSize = 0;
-
+            
             while (EmptyCapacity >= user.infoOnPC[user.NumberOfFileToCopy].Size && user.NumberOfFileToCopy != user.infoOnPC.TotalFilesQuantity)
             {
                 EmptyCapacity -= user.infoOnPC[user.NumberOfFileToCopy++].Size;
