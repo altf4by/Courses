@@ -31,8 +31,14 @@ namespace Task1
             //Console.WriteLine();
 
             User user = new User();
-            Console.WriteLine("Было затрачено секунд на копирование информации:");
-            Console.WriteLine(user.StartCopy(user.GetStorageByType(StorageType.Flash)));
+            int quantityOfDeviceUse = 0;
+            Console.WriteLine("It took seconds to copy important data from PC:");
+            Console.WriteLine("Flash: {0} seconds and {1} time(s)", user.StartCopy(user.GetStorageByType(user.storages[0].StorageType), out quantityOfDeviceUse), quantityOfDeviceUse);
+            //Console.WriteLine("DVD - one side: {0} seconds and {1} time(s)", user.StartCopy(user.GetStorageByType(user.storages[1].StorageType), out quantityOfDeviceUse), quantityOfDeviceUse);
+            //Console.WriteLine("DVD - side: {0} seconds and {1} time(s)", user.StartCopy(user.GetStorageByType(user.storages[2].StorageType), out quantityOfDeviceUse), quantityOfDeviceUse);
+            Console.WriteLine("External HDD: {0} seconds and {1} time(s)", user.StartCopy(user.GetStorageByType(user.storages[3].StorageType), out quantityOfDeviceUse), quantityOfDeviceUse);
+
+            //Console.WriteLine(user.StartCopy(user.GetStorageByType(StorageType.Flash)));
 
             Console.ReadKey(true);
         }

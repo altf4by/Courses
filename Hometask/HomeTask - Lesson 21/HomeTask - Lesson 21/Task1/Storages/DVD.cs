@@ -9,7 +9,7 @@ namespace Task1.Storages
         public const double ReadSpeed = 10.56 * 1024;
         public const double WriteSpeed = 10.56 * 1024;
 
-        public DVDSide[] sides; 
+        public DVDSide[] sides;
 
         protected IDVD_Interface dvdType;
 
@@ -21,35 +21,47 @@ namespace Task1.Storages
 
             sides = new DVDSide[dvdType.SidesQuantity];
 
-            for (int i = 0; i <= dvdType.SidesQuantity-1; i++)
+            for (int i = 0; i <= dvdType.SidesQuantity - 1; i++)
+            {
                 sides[i] = new DVDSide();
-
-            EmptyCapacity = dvdType.SidesQuantity*sides[0].GetSideCapacity();
+                EmptyCapacity += sides[i].EmptyCapacity/1024;
+            }
+            //EmptyCapacity = dvdType.SidesQuantity * sides[0].GetSideCapacity() * 1024;
         }
 
 
+        public override double GetReadSpeed()
+        {
+            return ReadSpeed / 1024;
+        }
+
+        public override double GetWriteSpeed()
+        {
+            return WriteSpeed / 1024;
+        }
+
         public override int CopyDataToDevice(User user)
         {
-            for (int i = 0; i < dvdType.SidesQuantity - 1; i++)
-            {
-                double copiedSize = 0;
+            double copiedSize = 0;
 
-                while (sides[i].EmptyCapacity >= user.infoOnPC[user.FileNumberToCopy].Size 
+            for (int i = 0; i <= dvdType.SidesQuantity - 1; i++)
+            {
+                while (sides[i].EmptyCapacity >= user.infoOnPC[user.FileNumberToCopy].Size
                     && user.FileNumberToCopy != user.infoOnPC.TotalFilesQuantity)
                 {
-                    sides[i].EmptyCapacity -= user.infoOnPC[user.FileNumberToCopy++].Size;
                     copiedSize += user.infoOnPC[user.FileNumberToCopy].Size;
-                    user.TimeSpent[0] += (int)(copiedSize / WriteSpeed);
+                    sides[i].EmptyCapacity -= user.infoOnPC[user.FileNumberToCopy].Size;
+                    EmptyCapacity -= user.infoOnPC[user.FileNumberToCopy].Size;
                     Array.Resize(ref filesOnDevice, filesOnDevice.Length + 1);
-                    filesOnDevice[filesOnDevice.Length - 1] = user.infoOnPC[user.FileNumberToCopy];
+                    filesOnDevice[filesOnDevice.Length - 1] = user.infoOnPC[user.FileNumberToCopy++];
                 }
             }
-            return user.TimeSpent[0];
+            return (int)(copiedSize / (WriteSpeed / 1024));
         }
 
         public override double GetCapacity()
         {
-            return dvdType.SidesQuantity * sides[0].GetSideCapacity();
+            return dvdType.SidesQuantity * sides[0].GetSideCapacity() * 1024;
         }
 
         public override double GetEmptyCapacity()
@@ -61,7 +73,7 @@ namespace Task1.Storages
         {
             return string.Format("Тип носителя и модель: {0}-{1}\nОбъем носителя: {2} Gb" +
              "\nСвободный объем: {3} Gb\nКоличество сторон: {4}\nСкорость (чтение/запись): {5} / {6} Kb/s",
-                StorageType, Model, this.GetCapacity(), EmptyCapacity, dvdType.SidesQuantity, ReadSpeed, WriteSpeed);
+                StorageType, Model, GetCapacity(), EmptyCapacity / 1024, dvdType.SidesQuantity, ReadSpeed, WriteSpeed);
         }
     }
 }

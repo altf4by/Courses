@@ -22,19 +22,29 @@ namespace Task1.Storages
         }
 
 
+        public override double GetReadSpeed()
+        {
+            return usbType.ReadSpeed/1024;
+        }
+
+        public override double GetWriteSpeed()
+        {
+            return usbType.WriteSpeed/1024;
+        }
 
         public override int CopyDataToDevice(User user)
         {
             double copiedSize = 0;
             
-            while (EmptyCapacity >= user.infoOnPC[user.FileNumberToCopy].Size && user.FileNumberToCopy != user.infoOnPC.TotalFilesQuantity)
+            while (EmptyCapacity > user.infoOnPC[user.FileNumberToCopy].Size && user.FileNumberToCopy != user.infoOnPC.TotalFilesQuantity)
             {
-                EmptyCapacity -= user.infoOnPC[user.FileNumberToCopy++].Size;
                 copiedSize += user.infoOnPC[user.FileNumberToCopy].Size;
+                EmptyCapacity -= user.infoOnPC[user.FileNumberToCopy].Size;                
                 Array.Resize(ref filesOnDevice, filesOnDevice.Length + 1);
-                filesOnDevice[filesOnDevice.Length - 1] = user.infoOnPC[user.FileNumberToCopy];
+                filesOnDevice[filesOnDevice.Length - 1] = user.infoOnPC[user.FileNumberToCopy++];
             }
-            return user.TimeSpent[0] += (int)(copiedSize / usbType.WriteSpeed);
+
+            return (int)(copiedSize / GetWriteSpeed());
         }
 
         public void CopyFileToDevice(File file)

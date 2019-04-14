@@ -27,6 +27,7 @@ namespace Task1.Storages
 
         public abstract string GetDeviceInfo();
 
-
+        public abstract double GetReadSpeed();
+        public abstract double GetWriteSpeed();
     }
 }

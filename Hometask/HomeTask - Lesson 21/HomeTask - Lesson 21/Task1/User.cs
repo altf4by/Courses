@@ -12,13 +12,11 @@ namespace Task1
     {
         public Storage[] storages;
 
-        public int[] TimeSpent { get; set; }
-        public int QuantityOfDeviceUse { get; set; }
+        //public int quantityOfDeviceUse;
 
         public Information infoOnPC { get; set; }
 
         public int FileNumberToCopy { get; set; }
-
 
 
         public User()
@@ -29,56 +27,51 @@ namespace Task1
             storages[2] = new DVD("ACME QT4710", new TwoSidesDVD());
             storages[3] = new ExternalHDD("Western Digital WDBUZG 5000ABK", 3, new USB_2_0());
 
-            infoOnPC = new Information(565);
-            TimeSpent = new int[4];
+            infoOnPC = new Information(490);
         }
 
 
-        //public User(Storage storage)
-        //{
-        //    TimeSpent = 0;
-        //    QuantityOfDeviceUse = 0;
-        //    StorageToCopy = storage;
-        //    FileNumberToCopy = 0;
-        //}
         public Storage GetStorageByType(StorageType storageType)
         {
             foreach (Storage storage in storages)
                 if (storageType == storage.StorageType)
                     return storage;
-                
+
             return new Flash();
         }
 
-        public void CopyToDevice(Storage storage)
+        public int CopyToDevice(Storage storage)
         {
-            TimeSpent[0] = storage.CopyDataToDevice(this);
+            return storage.CopyDataToDevice(this);
         }
 
-        public void CopyFromDevice(Storage storage)
+        public int CopyFromDevice(Storage storage)
         {
             double copiedSize = 0;
-
             do
             {
                 copiedSize += storage.filesOnDevice[storage.filesOnDevice.Length - 1].Size;
-                storage.EmptyCapacity += storage.filesOnDevice[storage.filesOnDevice.Length-1].Size;
-
+                storage.EmptyCapacity += storage.filesOnDevice[storage.filesOnDevice.Length - 1].Size;
                 Array.Resize(ref storage.filesOnDevice, storage.filesOnDevice.Length - 1);
-            } while (storage.filesOnDevice.Length>1);
-            //TimeSpent[0]+= (int)(copiedSize / );
+
+            } while (storage.filesOnDevice.Length >= 1);
+
+            return (int)(copiedSize / storage.GetReadSpeed());
         }
 
-        public int StartCopy(Storage storage)
+        public int StartCopy(Storage storage, out int quantityOfDeviceUse)
         {
-            TimeSpent[0] = 0;
+            int TimeSpent = 0;
+            quantityOfDeviceUse = 0;
+            FileNumberToCopy = 0;
             do
             {
-                CopyToDevice(storage);
-                CopyFromDevice(storage);
+                TimeSpent += CopyToDevice(storage);
+                TimeSpent += CopyFromDevice(storage);
+                quantityOfDeviceUse++;
             } while (FileNumberToCopy != infoOnPC.TotalFilesQuantity);
 
-            return TimeSpent[0];
+            return TimeSpent;
         }
 
 

@@ -27,7 +27,12 @@
 
         public File this[int index]
         {
-            get { return files[index]; }
+            get
+            {
+                if (index >= 0 && index < TotalFilesQuantity)
+                    return files[index];
+                else return files[TotalFilesQuantity - 1];
+            }
         }
 
     }

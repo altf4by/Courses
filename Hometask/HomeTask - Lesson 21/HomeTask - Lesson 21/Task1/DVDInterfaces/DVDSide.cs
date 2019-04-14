@@ -7,7 +7,7 @@
 
         public DVDSide()
         {
-            EmptyCapacity = _capacity;
+            EmptyCapacity = _capacity*1024;
         }
 
         public double GetSideCapacity()
