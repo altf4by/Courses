@@ -1,5 +1,5 @@
 ﻿using Task1.Enums;
-using Task1.Data;
+using Task1.Information;
 using Task1.USBIntefaces;
 using System;
 
@@ -10,15 +10,16 @@ namespace Task1.Storages
         public double Capacity { get; set; }
         public IUSB_Interface usbType;
 
-        public Flash() : this("NO NAME", 4, new USB_3_0()) { }
+        public Flash() : this("AData", 4, new USB_3_0()) { }
 
-        public Flash(double capacity) : this("NO NAME", capacity, new USB_3_0()) { }
+        public Flash(double capacity) : this("AData", capacity, new USB_3_0()) { }
 
         public Flash(string model, double capacity, IUSB_Interface usbType) : base(model, StorageType.Flash)
-        {            
-            Capacity = capacity*1024;
+        {
+            partitions = new Partition[1];
+            partitions[0] = new Partition(capacity);
+            Capacity = partitions[0].Capacity;
             this.usbType = usbType;
-            EmptyCapacity = Capacity;
         }
 
 
@@ -32,16 +33,19 @@ namespace Task1.Storages
             return usbType.WriteSpeed/1024;
         }
 
-        public override int CopyDataToDevice(User user)
+        public override int CopyDataToDevice(Data data)
         {
             double copiedSize = 0;
-            
-            while (EmptyCapacity > user.infoOnPC[user.FileNumberToCopy].Size && user.FileNumberToCopy != user.infoOnPC.TotalFilesQuantity)
+            Partition partition = partitions[0];
+            File copiedFile = data[data.NumberOfCopiedFiles];
+
+            while (partition.EmptyCapacity > copiedFile.Size && data.NumberOfCopiedFiles != data.TotalFilesQuantity)
             {
-                copiedSize += user.infoOnPC[user.FileNumberToCopy].Size;
-                EmptyCapacity -= user.infoOnPC[user.FileNumberToCopy].Size;                
-                Array.Resize(ref filesOnDevice, filesOnDevice.Length + 1);
-                filesOnDevice[filesOnDevice.Length - 1] = user.infoOnPC[user.FileNumberToCopy++];
+                copiedSize += copiedFile.Size;
+                partition.EmptyCapacity -= copiedFile.Size;   
+                
+                Array.Resize(ref partition.filesOnPartition, partition.filesOnPartition.Length + 1);
+                partition.filesOnPartition[partition.filesOnPartition.Length - 1] = data[data.NumberOfCopiedFiles++];
             }
 
             return (int)(copiedSize / GetWriteSpeed());
@@ -51,12 +55,12 @@ namespace Task1.Storages
         {
             double copiedSize = 0;
 
-            while (EmptyCapacity >= file.Size)
+            while (partitions[0].EmptyCapacity >= file.Size)
             {
-                EmptyCapacity -= file.Size;
+                partitions[0].EmptyCapacity -= file.Size;
                 copiedSize += file.Size;
-                Array.Resize(ref filesOnDevice, filesOnDevice.Length + 1);
-                filesOnDevice[filesOnDevice.Length - 1] = file;
+                Array.Resize(ref partitions[0].filesOnPartition, partitions[0].filesOnPartition.Length + 1);
+                partitions[0].filesOnPartition[partitions[0].filesOnPartition.Length - 1] = file;
             }
         }
 
@@ -67,14 +71,14 @@ namespace Task1.Storages
 
         public override double GetEmptyCapacity()
         {
-            return EmptyCapacity;
+            return partitions[0].EmptyCapacity;
         }
 
         public override string GetDeviceInfo()
         {
             return string.Format("Тип носителя и модель: {0}-{1}\nОбъем носителя: {2} Gb" +
                                  "\nСвободный объем: {3} Gb\nСкорость (чтение/запись): {4} / {5} Kb/s",
-                StorageType, Model, Capacity/1024, EmptyCapacity/1024, usbType.ReadSpeed, usbType.WriteSpeed);
+                StorageType, Model, Capacity/1024, GetEmptyCapacity()/1024, usbType.ReadSpeed, usbType.WriteSpeed);
         }
     }
 }

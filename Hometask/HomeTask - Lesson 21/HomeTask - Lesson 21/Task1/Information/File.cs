@@ -1,4 +1,4 @@
-﻿namespace Task1.Data
+﻿namespace Task1.Information
 {
     class File
     {

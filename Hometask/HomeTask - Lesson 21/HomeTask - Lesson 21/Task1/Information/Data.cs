@@ -1,13 +1,16 @@
-﻿namespace Task1.Data
+﻿namespace Task1.Information
 {
-    class Information
+    class Data
     {
         double size;
         File[] files;
+
+        public int NumberOfCopiedFiles { get; set; }
+
         public int TotalFilesQuantity { get; set; }
 
 
-        public Information(double size)
+        public Data(double size)
         {
             this.size = size * 1024;
             double tempFileSize = new File().Size;

@@ -43,19 +43,22 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Data\Information.cs" />
-    <Compile Include="Data\File.cs" />
+    <Compile Include="Information\Data.cs" />
+    <Compile Include="Information\File.cs" />
     <Compile Include="DVDInterfaces\DVDSide.cs" />
     <Compile Include="DVDInterfaces\IDVD_Interface.cs" />
     <Compile Include="DVDInterfaces\OneSideDVD.cs" />
     <Compile Include="DVDInterfaces\TwoSidesDVD.cs" />
+    <Compile Include="Enums\DVDTypes.cs" />
     <Compile Include="Enums\StorageType.cs" />
+    <Compile Include="MoveDataResult.cs" />
     <Compile Include="Partition.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Storages\DVD.cs" />
     <Compile Include="Storages\ExternalHDD.cs" />
     <Compile Include="Storages\Flash.cs" />
+    <Compile Include="Storages\IPartitionable.cs" />
     <Compile Include="Storages\Storage.cs" />
     <Compile Include="USBIntefaces\IUSB_Interface.cs" />
     <Compile Include="USBIntefaces\USB_2_0.cs" />

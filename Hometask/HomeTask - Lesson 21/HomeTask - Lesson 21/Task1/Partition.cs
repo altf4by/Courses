@@ -1,14 +1,18 @@
-﻿
+﻿using Task1.Information;
 namespace Task1
 {
     class Partition
     {
         public double Capacity { get; set; }
         public double EmptyCapacity { get; set; }
+        public File[] filesOnPartition;
 
-        public Partition() : this(166.66 * 1024) { }
-
-        public Partition(double size) { Capacity = size; EmptyCapacity = size; }
+        public Partition(double size)
+        {
+            Capacity = size * 1024;
+            EmptyCapacity = Capacity;
+            filesOnPartition = new File[0];
+        }
 
     }
 }

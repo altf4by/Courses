@@ -1,7 +1,12 @@
-﻿namespace Task1.DVDInterfaces
+﻿using Task1.Storages;
+namespace Task1.DVDInterfaces
+ 
 {
-    class OneSideDVD : IDVD_Interface
+    class OneSideDVD : IPartitionable
     {
-        public int SidesQuantity { get { return 1; } }
+        public OneSideDVD()
+        {        
+        }
+        public int PartitionsQuantity { get { return 1; } }
     }
 }
