@@ -30,15 +30,14 @@ namespace Task1
 
             for (int i = 0; i <= storage.partitions.Length - 1; i++)
             {
-                Partition partition = storage.partitions[i];
 
-                while (partition.filesOnPartition.Length >= 1)
+                while (storage.partitions[i].filesOnPartition.Length >= 1)
                 {
-                    copiedSize += partition.filesOnPartition[partition.filesOnPartition.Length - 1].Size;
 
-                    partition.EmptyCapacity += partition.filesOnPartition[partition.filesOnPartition.Length - 1].Size;
+                    copiedSize += storage.partitions[i].filesOnPartition[storage.partitions[i].filesOnPartition.Length - 1].Size;
+                    storage.partitions[i].EmptyCapacity += storage.partitions[i].filesOnPartition[storage.partitions[i].filesOnPartition.Length - 1].Size;
 
-                    Array.Resize(ref partition.filesOnPartition, partition.filesOnPartition.Length - 1);
+                    Array.Resize(ref storage.partitions[i].filesOnPartition, storage.partitions[i].filesOnPartition.Length - 1);
                 }
             }
 

@@ -11,11 +11,6 @@ namespace Task1.Storages
         public const double WriteSpeed = 10.56 * 1024;
 
         public IPartitionable dvdType;
-        //public DVDTypes dvdType;
-        //protected IPartitionable dvdType;
-
-
-        //public int PartitionsQuantity { get { return } set { } }
 
         public DVD() : this("ACME 003237", new OneSideDVD()) { }
 

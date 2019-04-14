@@ -32,7 +32,6 @@ namespace Task1
             Console.WriteLine();
 
             User user = new User(flash);
-            Data data = new Data(565);
 
             Console.WriteLine("It took seconds to copy important data from PC:");
             Console.WriteLine("Flash: {0}", user.MoveData(new Data(565)));

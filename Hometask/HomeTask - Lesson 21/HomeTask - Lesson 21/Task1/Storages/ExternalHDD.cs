@@ -39,11 +39,13 @@ namespace Task1.Storages
 
             for (int i = 0; i < partitions.Length; i++)
             {
-                while (partitions[i].EmptyCapacity >= data[data.NumberOfCopiedFiles].Size
+                File copiedFile = data[data.NumberOfCopiedFiles];
+
+                while (partitions[i].EmptyCapacity >= copiedFile.Size
                     && data.NumberOfCopiedFiles != data.TotalFilesQuantity)
                 {
-                    copiedSize += data[data.NumberOfCopiedFiles].Size;
-                    partitions[i].EmptyCapacity -= data[data.NumberOfCopiedFiles].Size;
+                    copiedSize += copiedFile.Size;
+                    partitions[i].EmptyCapacity -= copiedFile.Size;
 
                     Array.Resize(ref partitions[i].filesOnPartition, partitions[i].filesOnPartition.Length + 1);
                     partitions[i].filesOnPartition[partitions[i].filesOnPartition.Length - 1] = data[data.NumberOfCopiedFiles++];

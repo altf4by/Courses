@@ -36,16 +36,16 @@ namespace Task1.Storages
         public override int CopyDataToDevice(Data data)
         {
             double copiedSize = 0;
-            Partition partition = partitions[0];
+
             File copiedFile = data[data.NumberOfCopiedFiles];
 
-            while (partition.EmptyCapacity > copiedFile.Size && data.NumberOfCopiedFiles != data.TotalFilesQuantity)
+            while (partitions[0].EmptyCapacity > copiedFile.Size && data.NumberOfCopiedFiles != data.TotalFilesQuantity)
             {
                 copiedSize += copiedFile.Size;
-                partition.EmptyCapacity -= copiedFile.Size;   
+                partitions[0].EmptyCapacity -= copiedFile.Size;   
                 
-                Array.Resize(ref partition.filesOnPartition, partition.filesOnPartition.Length + 1);
-                partition.filesOnPartition[partition.filesOnPartition.Length - 1] = data[data.NumberOfCopiedFiles++];
+                Array.Resize(ref partitions[0].filesOnPartition, partitions[0].filesOnPartition.Length + 1);
+                partitions[0].filesOnPartition[partitions[0].filesOnPartition.Length - 1] = data[data.NumberOfCopiedFiles++];
             }
 
             return (int)(copiedSize / GetWriteSpeed());

@@ -37,6 +37,5 @@
                 else return files[TotalFilesQuantity - 1];
             }
         }
-
     }
 }
