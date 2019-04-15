@@ -22,45 +22,27 @@ namespace Task.Workers
             IPart[] houseParts = house.parts;
 
             for (int i = 0; i < houseParts.Length; i++)
-            {
-                if (houseParts[i] is Roof && (houseParts[i] as Roof).IsReady)
-                    DrawHouse();
-                else
-                    do
+                do
+                {
+                    foreach (IWorker worker in workers)
+                        if (worker is TeamLeader)
+                            worker.Work(houseParts[i]);
+
+                    if (TeamLeader.IsPartFinished)
                     {
-                        foreach (IWorker worker in workers)
-                            if (worker is TeamLeader)
-                                worker.Work(houseParts[i]);
+                        TeamLeader.IsPartFinished = false;
+                        break;
+                    }
+                    for (int j = 0; j < workers.Length; j++)
+                        if (workers[j] is Worker)
+                            workers[j].Work(houseParts[i]);
 
-                        if (TeamLeader.IsPartFinished)
-                        {
-                            TeamLeader.IsPartFinished = false;
-                            break;
-                        }
-                        for (int j = 0; j < workers.Length; j++)
-                            if (workers[j] is Worker)
-                                workers[j].Work(houseParts[i]);
-
-                        Console.WriteLine(new string(' ', 15) + "*NEXT DAY*");
-                        Console.WriteLine();
+                    Console.WriteLine(new string(' ', 15) + "*NEXT DAY*");
+                    Console.WriteLine();
 
 
-                    } while (house.parts[houseParts.Length - 1].IsReady == true);
-            }
-        }
+                } while (!houseParts[houseParts.Length - 1].IsReady);
 
-
-        public void DrawHouse()
-        {
-            Console.WriteLine("     /\\");
-            Console.WriteLine("    /  \\");
-            Console.WriteLine("   /    \\");
-            Console.WriteLine("  /      \\ ");
-            Console.WriteLine(" /--------\\ ");
-            Console.WriteLine("/ |      | \\ ");
-            Console.WriteLine("  |      |");
-            Console.WriteLine("  |      |");
-            Console.WriteLine("  | ____ |");     
         }
     }
 }

@@ -18,10 +18,6 @@ namespace Task
             team.StartWork(house);
 
 
-
-
-
-
             Console.ReadKey(true);
         }
     }

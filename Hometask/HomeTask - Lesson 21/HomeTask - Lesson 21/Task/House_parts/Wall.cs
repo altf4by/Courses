@@ -6,28 +6,7 @@ using System.Threading.Tasks;
 
 namespace Task.House_parts
 {
-    class Wall : IPart
+    class Wall : Part
     {
-        public bool IsReady
-        {
-            get
-            {
-                if (PercentReady < 100)
-                    return false;
-                else
-                {
-                    PercentReady = 100;
-                    return true;
-                }
-            }
-            private set { }
-        }
-
-        public int PercentReady { get; set; }
-
-        public void DisplayInfo()
-        {
-            Console.WriteLine("{0} is finished at {1}%.", GetType().Name, PercentReady);
-        }
     }
 }

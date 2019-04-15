@@ -46,6 +46,7 @@
     <Compile Include="House_parts\Basement.cs" />
     <Compile Include="House_parts\Door.cs" />
     <Compile Include="House_parts\House.cs" />
+    <Compile Include="House_parts\Part.cs" />
     <Compile Include="House_parts\Roof.cs" />
     <Compile Include="House_parts\Wall.cs" />
     <Compile Include="House_parts\Window.cs" />

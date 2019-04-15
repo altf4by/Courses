@@ -15,10 +15,9 @@ namespace Task.Workers
             FullName = name;
         }
 
-
         public void Work(IPart housePart)
         {
-            if (!housePart.IsReady && housePart.PercentReady < 100)
+            if (!housePart.IsReady /*&& housePart.PercentReady < 100*/)
             {
                 Console.WriteLine("{0} has started work with {1}", FullName, housePart.GetType().Name);
                 housePart.PercentReady += 20;
