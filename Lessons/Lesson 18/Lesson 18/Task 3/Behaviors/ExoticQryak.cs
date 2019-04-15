@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Task_3
 {
-    class ExoticQryak:SimpleQryak
+    class ExoticQryak : SimpleQryak
     {
         public override void Qryak()
         {
