@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{59A6DDCD-1FD1-4E64-A868-7F9CC7FB1815}</ProjectGuid>
+    <ProjectGuid>{5352B873-52B8-4653-83F8-6C6E32BC7559}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Task_8</RootNamespace>
-    <AssemblyName>Task 8</AssemblyName>
+    <RootNamespace>ComparableCar</RootNamespace>
+    <AssemblyName>ComparableCar</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>

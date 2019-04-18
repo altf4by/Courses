@@ -31,6 +31,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Incapsulation", "Incapsulat
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exceptions", "Exceptions\Exceptions.csproj", "{743A6BCD-C0A1-4E20-943E-326929DA4F37}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomExceptions", "CUstomExceptions\CustomExceptions.csproj", "{A31EA9CC-5093-40A8-A349-F83ADF0AEB30}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -93,6 +95,10 @@ Global
 		{743A6BCD-C0A1-4E20-943E-326929DA4F37}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{743A6BCD-C0A1-4E20-943E-326929DA4F37}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{743A6BCD-C0A1-4E20-943E-326929DA4F37}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A31EA9CC-5093-40A8-A349-F83ADF0AEB30}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A31EA9CC-5093-40A8-A349-F83ADF0AEB30}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A31EA9CC-5093-40A8-A349-F83ADF0AEB30}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A31EA9CC-5093-40A8-A349-F83ADF0AEB30}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{59A6DDCD-1FD1-4E64-A868-7F9CC7FB1815}</ProjectGuid>
+    <ProjectGuid>{A31EA9CC-5093-40A8-A349-F83ADF0AEB30}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Task_8</RootNamespace>
-    <AssemblyName>Task 8</AssemblyName>
+    <RootNamespace>CustomExceptions</RootNamespace>
+    <AssemblyName>CustomExceptions</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -32,6 +32,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <NoWin32Manifest>true</NoWin32Manifest>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -43,8 +46,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Car.cs" />
+    <Compile Include="CarIsDeadException.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Radio.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
