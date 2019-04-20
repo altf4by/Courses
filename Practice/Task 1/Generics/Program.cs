@@ -21,16 +21,16 @@ namespace Generics
             Console.WriteLine("before swap: {0}, {1}", a2, b2);
 
             Swap<int>(ref a1, ref b1);
-            Swap<string>(ref a2, ref b2);
+            //Swap<string>(ref a2, ref b2);
 
 
-            Console.WriteLine("after swap: {0}, {1}", a1, b1);
-            Console.WriteLine("after swap: {0}, {1}", a2, b2);
+            //Console.WriteLine("after swap: {0}, {1}", a1, b1);
+            //Console.WriteLine("after swap: {0}, {1}", a2, b2);
 
 
         }
 
-        static void Swap <T>(ref T a, ref T b)
+        static void Swap <T>(ref T a, ref T b) where T: struct
         {
             T temp = a;
             a = b;
