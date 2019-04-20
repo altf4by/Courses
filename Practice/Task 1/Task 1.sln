@@ -35,6 +35,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomExceptions", "CUstomE
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ComparableCar", "ComparableCar\ComparableCar.csproj", "{5352B873-52B8-4653-83F8-6C6E32BC7559}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Generics", "Generics\Generics.csproj", "{4FFD13B6-638E-46E6-88ED-CFC78D57C4BA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -105,6 +107,10 @@ Global
 		{5352B873-52B8-4653-83F8-6C6E32BC7559}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5352B873-52B8-4653-83F8-6C6E32BC7559}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5352B873-52B8-4653-83F8-6C6E32BC7559}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4FFD13B6-638E-46E6-88ED-CFC78D57C4BA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4FFD13B6-638E-46E6-88ED-CFC78D57C4BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4FFD13B6-638E-46E6-88ED-CFC78D57C4BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4FFD13B6-638E-46E6-88ED-CFC78D57C4BA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
