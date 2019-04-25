@@ -37,6 +37,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ComparableCar", "Comparable
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Generics", "Generics\Generics.csproj", "{4FFD13B6-638E-46E6-88ED-CFC78D57C4BA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Iterator", "Iterator\Iterator.csproj", "{0A4C86CA-E7A2-4588-A82F-8BC821A8DFEA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Iterator2", "Iterator2\Iterator2.csproj", "{513CBA08-56A1-4A2C-9F97-47C0AC60E794}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -111,6 +115,14 @@ Global
 		{4FFD13B6-638E-46E6-88ED-CFC78D57C4BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4FFD13B6-638E-46E6-88ED-CFC78D57C4BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4FFD13B6-638E-46E6-88ED-CFC78D57C4BA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0A4C86CA-E7A2-4588-A82F-8BC821A8DFEA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0A4C86CA-E7A2-4588-A82F-8BC821A8DFEA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0A4C86CA-E7A2-4588-A82F-8BC821A8DFEA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0A4C86CA-E7A2-4588-A82F-8BC821A8DFEA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{513CBA08-56A1-4A2C-9F97-47C0AC60E794}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{513CBA08-56A1-4A2C-9F97-47C0AC60E794}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{513CBA08-56A1-4A2C-9F97-47C0AC60E794}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{513CBA08-56A1-4A2C-9F97-47C0AC60E794}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
