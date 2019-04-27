@@ -41,6 +41,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Iterator", "Iterator\Iterat
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Iterator2", "Iterator2\Iterator2.csproj", "{513CBA08-56A1-4A2C-9F97-47C0AC60E794}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pattern Iterator", "Pattern Iterator\Pattern Iterator.csproj", "{C12A0365-3565-4595-A6D8-2DF6E2DBD4AE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Iterator 3", "Iterator 3\Iterator 3.csproj", "{78C5D3A8-2EF7-4C72-A0FD-A98EADF67B37}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -123,6 +127,14 @@ Global
 		{513CBA08-56A1-4A2C-9F97-47C0AC60E794}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{513CBA08-56A1-4A2C-9F97-47C0AC60E794}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{513CBA08-56A1-4A2C-9F97-47C0AC60E794}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C12A0365-3565-4595-A6D8-2DF6E2DBD4AE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C12A0365-3565-4595-A6D8-2DF6E2DBD4AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C12A0365-3565-4595-A6D8-2DF6E2DBD4AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C12A0365-3565-4595-A6D8-2DF6E2DBD4AE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{78C5D3A8-2EF7-4C72-A0FD-A98EADF67B37}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{78C5D3A8-2EF7-4C72-A0FD-A98EADF67B37}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{78C5D3A8-2EF7-4C72-A0FD-A98EADF67B37}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{78C5D3A8-2EF7-4C72-A0FD-A98EADF67B37}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

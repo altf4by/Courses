@@ -31,7 +31,7 @@ namespace Task_4
             }
 
             Console.ReadKey();
-        }
+        } 
 
     }
     class UserCollection

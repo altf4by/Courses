@@ -42,14 +42,9 @@ namespace Task_1
             points.Add(new Point(5, 6));
 
             foreach (Point point in points)
-            {
                 Console.WriteLine(point + " ");
 
-            }
-
-
             Console.ReadKey();
-
         }
     }
 

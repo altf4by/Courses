@@ -18,6 +18,20 @@ namespace Iterator2
                 Console.WriteLine(item.ToString());
             }
 
+            Console.WriteLine();
+
+            UserCollection uc2 = new UserCollection();
+
+            IEnumerable enumerable = uc2 as IEnumerable;
+            IEnumerator enumerator = enumerable.GetEnumerator();
+
+            while (enumerator.MoveNext())
+            {
+                Console.WriteLine(enumerator.Current.ToString());
+            }
+
+
+
             Console.ReadKey();
         }
     }
@@ -28,6 +42,10 @@ namespace Iterator2
         public Element(string name)
         {
             Name = name;
+        }
+        public override string ToString()
+        {
+            return Name;
         }
     }
 
