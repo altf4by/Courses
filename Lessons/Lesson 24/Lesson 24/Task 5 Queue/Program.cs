@@ -15,7 +15,7 @@ namespace Task_5_Queue
             queue.Enqueue("An item"); Console.WriteLine(queue.Dequeue());
 
             Console.ReadKey();
-
+ 
         }
     }
 }

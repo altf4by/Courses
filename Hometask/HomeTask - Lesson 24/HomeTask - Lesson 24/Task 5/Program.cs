@@ -5,17 +5,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Task_11_HashTable4
+namespace Task_5
 {
-    public class Fish
-    {
-        public string name;
 
-        public Fish(string name)
-        {
-            this.name = name;
-        }
-    }
 
     class Program
     {
@@ -34,5 +26,4 @@ namespace Task_11_HashTable4
             Console.ReadKey();
         }
     }
- 
 }

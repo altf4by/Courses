@@ -7,7 +7,7 @@ using System.Collections;
 
 namespace CustomEnumerator
 {
-    class Garage:IEnumerable
+    class Garage : IEnumerable
     {
         private Car[] carArray = new Car[4];
 
@@ -18,7 +18,7 @@ namespace CustomEnumerator
             carArray[2] = new Car("Zippy", 30);
             carArray[3] = new Car("Fred", 30);
         }
-        public IEnumerator GetEnumerator()
+        IEnumerator IEnumerable.GetEnumerator()
         {
             return carArray.GetEnumerator();
         }
