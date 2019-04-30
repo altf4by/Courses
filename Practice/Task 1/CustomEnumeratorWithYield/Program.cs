@@ -4,17 +4,18 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CustomEnumerator
+namespace CustomEnumeratorWithYield
 {
     class Program
     {
         static void Main(string[] args)
         {
-
             Garage carLot = new Garage();
 
-            foreach (Car car in carLot)
-                Console.WriteLine("{0} is going {1} MPH", car.ToString());
+            foreach (Car c in carLot)
+            {
+                Console.WriteLine(c.);
+            }
         }
     }
 }

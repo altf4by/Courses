@@ -45,6 +45,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pattern Iterator", "Pattern
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Iterator 3", "Iterator 3\Iterator 3.csproj", "{78C5D3A8-2EF7-4C72-A0FD-A98EADF67B37}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomEnumeratorWithYield", "CustomEnumeratorWithYield\CustomEnumeratorWithYield.csproj", "{BA40D46D-1171-40BD-A520-0749680C1899}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -135,6 +137,10 @@ Global
 		{78C5D3A8-2EF7-4C72-A0FD-A98EADF67B37}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{78C5D3A8-2EF7-4C72-A0FD-A98EADF67B37}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{78C5D3A8-2EF7-4C72-A0FD-A98EADF67B37}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BA40D46D-1171-40BD-A520-0749680C1899}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BA40D46D-1171-40BD-A520-0749680C1899}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BA40D46D-1171-40BD-A520-0749680C1899}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BA40D46D-1171-40BD-A520-0749680C1899}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
