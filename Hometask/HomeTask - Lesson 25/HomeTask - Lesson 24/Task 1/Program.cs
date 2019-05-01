@@ -16,11 +16,24 @@ namespace Task_1
             list.AddLast(2);
             list.AddLast(3);
 
+            Console.WriteLine("Add Last: ");
+            foreach (Element<int> element in list)
+                Console.Write("{0} ",element.ToString());
 
-            foreach (var item in list.GetCollection())
-            {
-                item.ToString();
-            }
+            list.AddAfterByValue(1, 5);
+
+            Console.WriteLine();
+            Console.WriteLine("Add After By Value: ");
+
+            foreach (Element<int> element in list)
+                Console.Write("{0} ", element.ToString());
+
+            list.AddAfterByPosition(1, 100);
+
+            Console.WriteLine("\nAdd After By Position: ");
+
+            foreach (Element<int> element in list)
+                Console.Write("{0} ", element.ToString());
 
             Console.ReadKey();
         }

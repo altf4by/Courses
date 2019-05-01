@@ -26,23 +26,62 @@ namespace Task_1
             SetFirstAndLast(element);
         }
 
-        public Element<T> AddLast(T data)
+        public void AddLast(T data)
         {
-            Element<T> element = new Element<T>(data);
+            Element<T> newElement = new Element<T>(data);
 
             if (Last != null)
             {
                 Last.Prev = Count == 1 ? null : Last;
-                Last.Next = element;
+                Last.Next = newElement;
                 First = Count == 1 ? Last : First;
-                element.Prev = Last;
-                Last = element;
+                newElement.Prev = Last;
+                Last = newElement;
                 Count++;
             }
             else
-                SetFirstAndLast(element);
+                SetFirstAndLast(newElement);
+        }
 
-            return element;
+        public void AddAfterByValue(T elementData, T data)
+        {
+            Element<T> newElement = new Element<T>(data);
+            Element<T> current = First;
+
+            if (elementData != null)
+            {
+                //Вставка после по значению элемента
+                while (!elementData.Equals(current.Data))
+                    current = current.Next;
+
+                newElement.Next = current.Next;
+                newElement.Prev = current;
+                current.Next = newElement;
+                Count++;
+            }
+
+        }
+        public void AddAfterByPosition(int position, T data)
+        {
+            Element<T> newElement = new Element<T>(data);
+            Element<T> current = First;
+            int tempCount = 1;
+
+            if (position >= 1 && position < Count)
+            {
+                //Вставка после по индексу элемента
+                while (position != tempCount)
+                {
+                    tempCount++;
+                    current = current.Next;
+                }
+
+                newElement.Next = current.Next;
+                newElement.Prev = current;
+                current.Next = newElement;
+                Count++;
+            }
+
         }
 
         private void SetFirstAndLast(Element<T> element)
@@ -54,12 +93,13 @@ namespace Task_1
 
         public IEnumerator GetEnumerator()
         {
-            throw new NotImplementedException();
+            Element<T> current = First;
+            while (current != null)
+            {
+                yield return current;
+                current = current.Next;
+            }
         }
 
-        public IEnumerable GetCollection(T data)
-        {
-            yield return AddLast(data);
-        }
     }
 }
