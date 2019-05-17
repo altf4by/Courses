@@ -22,10 +22,10 @@ namespace Task_1
             }
         }
 
-        public Element<T> Next { get; set; } = null;
-        public Element<T> Prev { get; set; } = null;
+        public Element<T> Next { get; set; }
+        public Element<T> Prev { get; set; }
 
-
+        
         public Element(T data)
         {
             Data = data;

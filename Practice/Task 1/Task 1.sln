@@ -47,6 +47,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Iterator 3", "Iterator 3\It
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomEnumeratorWithYield", "CustomEnumeratorWithYield\CustomEnumeratorWithYield.csproj", "{BA40D46D-1171-40BD-A520-0749680C1899}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IO1", "IO1\IO1.csproj", "{5A3374CD-A4FA-443A-9542-88F1FBE532E9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IO2", "IO2\IO2.csproj", "{C2FBEE55-16E6-446C-AA76-E1E09EE1002F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -141,6 +145,14 @@ Global
 		{BA40D46D-1171-40BD-A520-0749680C1899}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BA40D46D-1171-40BD-A520-0749680C1899}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BA40D46D-1171-40BD-A520-0749680C1899}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5A3374CD-A4FA-443A-9542-88F1FBE532E9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5A3374CD-A4FA-443A-9542-88F1FBE532E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5A3374CD-A4FA-443A-9542-88F1FBE532E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5A3374CD-A4FA-443A-9542-88F1FBE532E9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C2FBEE55-16E6-446C-AA76-E1E09EE1002F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C2FBEE55-16E6-446C-AA76-E1E09EE1002F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C2FBEE55-16E6-446C-AA76-E1E09EE1002F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C2FBEE55-16E6-446C-AA76-E1E09EE1002F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
