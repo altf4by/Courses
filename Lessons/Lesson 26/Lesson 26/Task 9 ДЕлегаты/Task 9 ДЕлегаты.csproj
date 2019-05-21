@@ -7,7 +7,7 @@
     <ProjectGuid>{4A8C2301-7684-45BA-B85D-5C642ECE68BC}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <RootNamespace>Task_9_ДЕлегаты</RootNamespace>
-    <AssemblyName>Task_9_ДЕлегаты</AssemblyName>
+    <AssemblyName>Task 9 ДЕлегаты</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>

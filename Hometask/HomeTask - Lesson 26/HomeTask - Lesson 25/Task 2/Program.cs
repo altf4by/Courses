@@ -46,7 +46,7 @@ namespace Task_2
 
                 using (FileStream file2 = new FileStream(path + @"\file2.doc", FileMode.OpenOrCreate)) { }
 
-                using (FileStream file3 = new FileStream(path + @"\file3.doc", FileMode.OpenOrCreate)) { }
+                using (FileStream file3 = new FileStream(path + @"\file3.doc", FileMode.OpenOrCreate)) { }                
             }
         }
     }

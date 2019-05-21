@@ -21,7 +21,7 @@ namespace Task_6_Анонимные_методы
             Console.WriteLine("{0} + {1} = {2}", summand1, summand2, sum);
 
             MyDelegate myDelegate2 = delegate { return 100; };
-
+ 
             Console.WriteLine(myDelegate2(2,3));
 
             Console.ReadKey();

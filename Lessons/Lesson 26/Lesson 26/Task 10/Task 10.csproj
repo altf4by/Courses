@@ -7,7 +7,7 @@
     <ProjectGuid>{0BDEFF68-3DE5-44CE-9B7C-F296F3C4516D}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <RootNamespace>Task_10</RootNamespace>
-    <AssemblyName>Task_10</AssemblyName>
+    <AssemblyName>Task 10</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>

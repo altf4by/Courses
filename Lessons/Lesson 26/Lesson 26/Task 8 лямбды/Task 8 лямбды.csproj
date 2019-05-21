@@ -7,7 +7,7 @@
     <ProjectGuid>{9E4C9E91-1ED7-4CA3-B61F-0FA29991258F}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <RootNamespace>Task_8_лямбды</RootNamespace>
-    <AssemblyName>Task_8_лямбды</AssemblyName>
+    <AssemblyName>Task 8 лямбды</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
