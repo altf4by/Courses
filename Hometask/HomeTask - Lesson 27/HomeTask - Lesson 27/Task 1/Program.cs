@@ -10,6 +10,15 @@ namespace Task_1
     {
         static void Main(string[] args)
         {
+            KeyBoardController controller = new KeyBoardController();
+            Logger logger = new Logger();
+
+            controller.KeyPressed += logger.CollectPressedKeys;
+            controller.StopKeyPressed += logger.SaveResultsToFile;
+
+            controller.Start();
+
+            Console.ReadKey();
         }
     }
 }

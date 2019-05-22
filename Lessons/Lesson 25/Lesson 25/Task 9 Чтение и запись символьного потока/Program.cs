@@ -12,7 +12,7 @@ namespace Task_9_Чтение_и_запись_символьного_поток�
         static void Main()
         {
 
-            FileInfo file = new FileInfo(@"C:\Text.txt");
+            FileInfo file = new FileInfo(@"C:\1231111111\Text.txt");
 
             StreamWriter writer = file.CreateText();
             //StreamWriter writer = new StreamWriter(@"E:\Text.txt", true, Encoding.Default);

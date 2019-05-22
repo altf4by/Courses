@@ -26,11 +26,13 @@ namespace Task_10
 
     public class CarInfoEventArgs : EventArgs
     {
+        public string Car { get; private set; }
+
         public CarInfoEventArgs(string car)
         {
             this.Car = car;
         }
-        public string Car { get; private set; }
+
     }
 
     public class CarDealer
