@@ -11,16 +11,16 @@ namespace Task_1
     {
         List<string> data = new List<string>();
 
-        public void CollectPressedKeys(object sender, ConsoleKey key)
+        public void CollectPressedKeys(object sender, KeyPressedEventArgs e)
         {
-            data.Add(string.Format("{0:HH:MM:s} | Key '{1}' |", DateTime.UtcNow, key));
+            data.Add(string.Format("{0:HH:MM:s} | Key '{1}' |", DateTime.UtcNow, e.Key));
         }
 
         public void SaveResultsToFile(object sender, CounterEventArgs e)
         {
             Console.WriteLine("\nExecuting of the program stopped.");
 
-            data.Add(string.Format(new string('-', 50) + "\nTotally was pressed {0} keys", e));
+            data.Add(string.Format(new string('-', 50) + "\nTotally was pressed {0} keys", e.Counter));
 
             if (!Directory.Exists(@"C:\MySpyDirectory"))
                 Directory.CreateDirectory(@"C:\MySpyDirectory");
@@ -33,7 +33,7 @@ namespace Task_1
                 fs.Close();               
             }
 
-            foreach (string str in data)
+            //foreach (string str in data)
                 File.WriteAllLines(path, data);
         }
 

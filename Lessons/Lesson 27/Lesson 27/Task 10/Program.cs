@@ -30,7 +30,7 @@ namespace Task_10
 
         public CarInfoEventArgs(string car)
         {
-            this.Car = car;
+            Car = car;
         }
 
     }
