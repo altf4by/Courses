@@ -10,24 +10,37 @@ namespace Task_1
     {
         public void Start()
         {
-            char ch;
+            ConsoleKey key;
             int counter = 0;
 
             Console.WriteLine("Start printing, till \".\" not pressed");
 
             do
             {
-                ch = Console.ReadKey().KeyChar;
+                key = Console.ReadKey().Key;
                 counter++;
 
-                KeyPressed(this, ch);
+                KeyPressed?.Invoke(this, key);
+            } while (key != ConsoleKey.OemPeriod);
 
-            } while (ch != 46);
-
-            StopKeyPressed(this, counter);
+            EventHandler<CounterEventArgs> CounterInfo = StopKeyPressed;
+            if (CounterInfo != null)
+            {
+                CounterInfo(this, new CounterEventArgs(counter));
+            }
+            //StopKeyPressed?.Invoke(this, counter);
         }
 
-        public event EventHandler<char> KeyPressed;
-        public event EventHandler<int> StopKeyPressed;
+        public event EventHandler<ConsoleKey> KeyPressed;
+        public event EventHandler<CounterEventArgs> StopKeyPressed;
+    }
+
+    public class CounterEventArgs : EventArgs
+    {
+        public int counter = 0;
+        public CounterEventArgs(int count)
+        {
+            counter = count;
+        }
     }
 }

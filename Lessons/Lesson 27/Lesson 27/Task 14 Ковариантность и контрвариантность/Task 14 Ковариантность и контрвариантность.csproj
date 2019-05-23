@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{C791C133-72D4-4DEA-A133-B82B2911427E}</ProjectGuid>
+    <ProjectGuid>{003CAF05-9FC9-4259-B63A-1A2EE559CF2F}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Task_1</RootNamespace>
-    <AssemblyName>Task 1</AssemblyName>
+    <RootNamespace>Task_14_Ковариантность_и_контрвариантность</RootNamespace>
+    <AssemblyName>Task 14 Ковариантность и контрвариантность</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,8 +43,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="KeyBoardController.cs" />
-    <Compile Include="Logger.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

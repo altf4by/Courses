@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{C791C133-72D4-4DEA-A133-B82B2911427E}</ProjectGuid>
+    <ProjectGuid>{1CF7111D-5EBD-40C5-B2C6-D12B57C39794}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Task_1</RootNamespace>
-    <AssemblyName>Task 1</AssemblyName>
+    <RootNamespace>Task_12</RootNamespace>
+    <AssemblyName>Task 12</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,8 +43,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="KeyBoardController.cs" />
-    <Compile Include="Logger.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
