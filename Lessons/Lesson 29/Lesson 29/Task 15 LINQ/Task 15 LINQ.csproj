@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{663BFD04-95E8-4BB0-8316-D9FAB9E12BA2}</ProjectGuid>
+    <ProjectGuid>{A510AC39-2EE1-47DE-A5B2-232A9557F1B7}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Ефыл_16</RootNamespace>
-    <AssemblyName>Ефыл 16</AssemblyName>
+    <RootNamespace>Task_15_LINQ</RootNamespace>
+    <AssemblyName>Task_15_LINQ</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>

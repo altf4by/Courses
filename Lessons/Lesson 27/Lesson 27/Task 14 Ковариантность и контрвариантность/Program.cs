@@ -29,7 +29,7 @@ namespace Task_14_Ковариантность_и_контрвариантнос
         public int Prop
         {
             get { return y; }
-            set { y = value; }
+            set { y = value;  }
         }
     }
     class MyClass : IInterface<B>

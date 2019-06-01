@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{663BFD04-95E8-4BB0-8316-D9FAB9E12BA2}</ProjectGuid>
+    <ProjectGuid>{3884689E-7F2B-44A0-B327-7DF8F1E1AC66}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Ефыл_16</RootNamespace>
-    <AssemblyName>Ефыл 16</AssemblyName>
+    <RootNamespace>Task_3_Анонимные_типы</RootNamespace>
+    <AssemblyName>Task 3 Анонимные типы</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>

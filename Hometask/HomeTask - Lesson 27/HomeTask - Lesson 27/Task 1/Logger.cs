@@ -1,8 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.IO;
 
 namespace Task_1
@@ -33,9 +30,7 @@ namespace Task_1
                 fs.Close();               
             }
 
-            //foreach (string str in data)
                 File.WriteAllLines(path, data);
         }
-
     }
 }

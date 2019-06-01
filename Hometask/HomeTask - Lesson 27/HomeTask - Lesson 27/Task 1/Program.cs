@@ -16,9 +16,8 @@ namespace Task_1
             controller.KeyPressed += logger.CollectPressedKeys;
             controller.StopKeyPressed += logger.SaveResultsToFile;
 
-            ProgramStarter starter = new ProgramStarter(controller);
-            
-            //controller.Start();
+            ProgramStarter starter = new ProgramStarter();
+            starter.Start(controller);
 
             Console.ReadKey();
         }
