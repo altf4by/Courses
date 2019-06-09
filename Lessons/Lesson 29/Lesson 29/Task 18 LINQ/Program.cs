@@ -23,6 +23,8 @@ namespace Task_18_LINQ
             foreach (var item in queryRes.Skip(5))
             { Console.WriteLine(item); }
 
+
+            customers.Where(x => x.ID.Equals(6));
             Console.ReadKey();
         }
     }

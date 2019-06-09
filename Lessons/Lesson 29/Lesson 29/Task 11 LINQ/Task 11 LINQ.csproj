@@ -7,7 +7,7 @@
     <ProjectGuid>{79FDAE6E-DB50-4BF1-8C30-80EC405BD185}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <RootNamespace>Task_11_LINQ</RootNamespace>
-    <AssemblyName>Task_11_LINQ</AssemblyName>
+    <AssemblyName>Task 11 LINQ</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>

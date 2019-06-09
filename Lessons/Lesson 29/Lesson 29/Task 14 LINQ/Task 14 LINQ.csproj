@@ -7,7 +7,7 @@
     <ProjectGuid>{FE5DB196-2065-4901-B034-494D85C09582}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <RootNamespace>Task_14_LINQ</RootNamespace>
-    <AssemblyName>Task_14_LINQ</AssemblyName>
+    <AssemblyName>Task 14 LINQ</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
