@@ -20,6 +20,6 @@ namespace Task_1
             starter.Start(controller);
 
             Console.ReadKey();
-        }
+        2}
     }
 }

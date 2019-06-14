@@ -22,7 +22,7 @@ namespace Task_1
                 Join(Formula1.GetContructorChampions().SelectMany(team => team.Years, (team, year) => new { Team = team.Name, year }),
                 team => team.year,
                 champ => champ.year,
-                (champ, team) => new { Year = team.year, TeamName = team.Team, ChampName = champ.LastName });
+                (champ, team) => new { Year = team.year, TeamName = team.Team, ChampName = champ.LastName }).Take(10);
 
             var query3 = (from team in Formula1.GetContructorChampions()
                          from year in team.Years

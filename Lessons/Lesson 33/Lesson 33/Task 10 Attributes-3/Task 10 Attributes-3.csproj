@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{E88F0997-1872-4AB5-B642-EDA7962A4C6A}</ProjectGuid>
+    <ProjectGuid>{58AA5D3B-13FC-434C-9DC0-828205ADCBBD}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Task_2</RootNamespace>
-    <AssemblyName>Task 2</AssemblyName>
+    <RootNamespace>Task_10_Attributes_3</RootNamespace>
+    <AssemblyName>Task 10 Attributes-3</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,12 +43,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="EventProvider.cs" />
-    <Compile Include="HandlerProvider.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Signer.cs" />
-    <Compile Include="SomeEventArgs.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

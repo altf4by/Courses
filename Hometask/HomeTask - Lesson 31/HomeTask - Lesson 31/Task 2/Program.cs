@@ -10,6 +10,23 @@ namespace Task_2
     {
         static void Main(string[] args)
         {
+            var ep = new EventProvider();
+            var hp = new HandlerProvider();
+
+
+            ep.SomeEvent += hp.SomeMethod;
+
+            ep.SomeEvent += hp.SomeMethod;
+            ep.SomeEvent += Handler1;
+
+
+            Console.ReadKey();
+
+        }
+
+        static void Handler1(object sender, EventArgs e)
+        {
+
         }
     }
 }
