@@ -5,3 +5,10 @@ C:\Users\User\source\repos\Hometask\Hometask - Lesson 6\Hometask - Lesson 6\Task
 C:\Users\User\source\repos\Hometask\Hometask - Lesson 6\Hometask - Lesson 6\Task 1\obj\Debug\Task 1.csproj.CoreCompileInputs.cache
 C:\Users\User\source\repos\Hometask\Hometask - Lesson 6\Hometask - Lesson 6\Task 1\obj\Debug\Task 1.exe
 C:\Users\User\source\repos\Hometask\Hometask - Lesson 6\Hometask - Lesson 6\Task 1\obj\Debug\Task 1.pdb
+c:\Users\Professional\source\repos\Hometask\Hometask - Lesson 6\Hometask - Lesson 6\Task 1\bin\Debug\Task 1.exe.config
+c:\Users\Professional\source\repos\Hometask\Hometask - Lesson 6\Hometask - Lesson 6\Task 1\bin\Debug\Task 1.exe
+c:\Users\Professional\source\repos\Hometask\Hometask - Lesson 6\Hometask - Lesson 6\Task 1\bin\Debug\Task 1.pdb
+c:\Users\Professional\source\repos\Hometask\Hometask - Lesson 6\Hometask - Lesson 6\Task 1\obj\Debug\Task 1.csprojAssemblyReference.cache
+c:\Users\Professional\source\repos\Hometask\Hometask - Lesson 6\Hometask - Lesson 6\Task 1\obj\Debug\Task 1.csproj.CoreCompileInputs.cache
+c:\Users\Professional\source\repos\Hometask\Hometask - Lesson 6\Hometask - Lesson 6\Task 1\obj\Debug\Task 1.exe
+c:\Users\Professional\source\repos\Hometask\Hometask - Lesson 6\Hometask - Lesson 6\Task 1\obj\Debug\Task 1.pdb
