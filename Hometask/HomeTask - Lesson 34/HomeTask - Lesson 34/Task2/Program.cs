@@ -6,12 +6,11 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace Task_1
+namespace Task2
 {
     class Program
     {
-        static object sync = new object();
-
+        static object obj = new object();
         static void Main(string[] args)
         {
             string path1 = @"C:\file1.txt";
@@ -24,24 +23,23 @@ namespace Task_1
             thread2.Start(path2);
 
             Console.ReadKey();
-
         }
 
         static void WriteDataToFile(object path)
         {
-            string path3 = @"C:\file3.txt";
             string s;
-
-            using (StreamReader reader = new StreamReader(path.ToString()))
+            string newFile = @"C:\file3.txt";
+            using (StreamReader sr = new StreamReader(path.ToString()))
             {
-                s = reader.ReadToEnd();
-            }
-            lock (sync)
-            {
-                using (StreamWriter sw = new StreamWriter(path3, true))
+                s = sr.ReadToEnd();
+                lock (obj)
                 {
-                    sw.Write(s);
+                    using (StreamWriter sw = new StreamWriter(newFile, true))
+                    {
+                        sw.Write(s, true);
+                    }
                 }
+                
             }
 
         }

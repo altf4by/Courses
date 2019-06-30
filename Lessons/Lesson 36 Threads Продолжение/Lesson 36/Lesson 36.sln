@@ -25,6 +25,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Task 10 ManualResetEvent", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Task 11 ManualResetEvent", "Task 11 ManualResetEvent\Task 11 ManualResetEvent.csproj", "{C5084AB8-179C-4DC3-B6EC-393DCF9444F3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test", "Test\Test.csproj", "{B9CB8736-36A3-4B86-A419-324123F2A9EF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -75,6 +77,10 @@ Global
 		{C5084AB8-179C-4DC3-B6EC-393DCF9444F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C5084AB8-179C-4DC3-B6EC-393DCF9444F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C5084AB8-179C-4DC3-B6EC-393DCF9444F3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B9CB8736-36A3-4B86-A419-324123F2A9EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B9CB8736-36A3-4B86-A419-324123F2A9EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B9CB8736-36A3-4B86-A419-324123F2A9EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B9CB8736-36A3-4B86-A419-324123F2A9EF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
