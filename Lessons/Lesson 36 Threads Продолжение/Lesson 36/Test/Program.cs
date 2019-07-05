@@ -19,7 +19,7 @@ namespace Test
 
             new Thread(() =>
             {
-                Console.WriteLine("Waiting for signal"); 
+                Console.WriteLine("Waiting for signal");     
                 Console.WriteLine(Thread.CurrentThread.IsThreadPoolThread);
                 signal.WaitOne();
                 signal.Dispose();
